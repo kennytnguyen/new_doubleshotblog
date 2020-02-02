@@ -37,7 +37,7 @@ export default function LandingPage({ ...rest }) {
     <div>
       <Header
         color="transparent"
-        brand="Material Kit PRO React"
+        brand="doubleshotblog"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
@@ -78,6 +78,8 @@ export default function LandingPage({ ...rest }) {
           <SectionWork />
         </div>
       </div>
+
+      {/* FOOTER */}
       <Footer
         content={
           <div>
