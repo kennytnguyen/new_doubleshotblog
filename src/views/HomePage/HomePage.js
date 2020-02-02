@@ -19,6 +19,9 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 
+// Sections for this page
+import SectionProduct from "./Sections/SectionProduct.js";
+
 import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js";
 
 import bg12 from "assets/img/transfer/beach2.jpg";
@@ -26,6 +29,10 @@ import bg12 from "assets/img/transfer/beach2.jpg";
 const useStyles = makeStyles(headersStyle);
 
 export default function SectionHeaders({ ...rest }) {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+        document.body.scrollTop = 0;
+      });
     const classes = useStyles();
     const settings = {
       dots: true,
@@ -44,12 +51,17 @@ export default function SectionHeaders({ ...rest }) {
             absolute
             brand="doubleshotblog"
             color="transparent"
+            fixed
+            changeColorOnScroll={{
+                height: 300,
+                color: "default"
+              }}
             links={
               <div className={classes.collapse}>
                 <List className={classes.list + " " + classes.mlAuto}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href=""
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
                       color="transparent"
@@ -59,7 +71,7 @@ export default function SectionHeaders({ ...rest }) {
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href=""
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
                       color="transparent"
@@ -124,8 +136,6 @@ export default function SectionHeaders({ ...rest }) {
                   <h4>
                     Hi I'm Kenny and this is where I share my thoughts,
                     experiences, and insight on anything and everything in my life.
-
-                    Here's some music.
                   </h4>
                   <br />
                   {/* <Button
@@ -138,7 +148,7 @@ export default function SectionHeaders({ ...rest }) {
                     Blog
                   </Button> */}
                 </GridItem>
-                <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
+                {/* <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
                   <div className={classes.iframeContainer}>
                     <iframe
                       height="250"
@@ -149,12 +159,19 @@ export default function SectionHeaders({ ...rest }) {
                       title="Tunessa"
                     />
                   </div>
-                </GridItem>
+                </GridItem> */}
               </GridContainer>
             </div>
           </div>
         </div>
         {/* HEADER 1 END */}
+
+        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classes.container}>
+          <SectionProduct />
+        </div>
+      </div>
+
     </div>
   );
 }
