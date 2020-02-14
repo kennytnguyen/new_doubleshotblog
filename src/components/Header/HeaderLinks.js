@@ -102,9 +102,6 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              <LineStyle className={classes.dropdownIcons} /> Presentation Page
-            </Link>,
             <Link to="/components" className={classes.dropdownLink}>
               <Layers className={classes.dropdownIcons} />
               All components
@@ -168,20 +165,6 @@ export default function HeaderLinks(props) {
               <Assignment className={classes.dropdownIcons} /> Projects
             </Link>,
             <Link
-              to="/sections#pricing"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "pricing")}
-            >
-              <MonetizationOn className={classes.dropdownIcons} /> Pricing
-            </Link>,
-            <Link
-              to="/sections#testimonials"
-              className={classes.dropdownLink}
-              onClick={e => smoothScroll(e, "testimonials")}
-            >
-              <Chat className={classes.dropdownIcons} /> Testimonials
-            </Link>,
-            <Link
               to="/sections#contacts"
               className={classes.dropdownLink}
               onClick={e => smoothScroll(e, "contacts")}
@@ -215,29 +198,8 @@ export default function HeaderLinks(props) {
             <Link to="/contact-us" className={classes.dropdownLink}>
               <LocationOn className={classes.dropdownIcons} /> Contact Us
             </Link>,
-            <Link to="/landing-page" className={classes.dropdownLink}>
-              <ViewDay className={classes.dropdownIcons} /> Landing Page
-            </Link>,
-            <Link to="/login-page" className={classes.dropdownLink}>
-              <Fingerprint className={classes.dropdownIcons} /> Login Page
-            </Link>,
-            <Link to="/pricing" className={classes.dropdownLink}>
-              <AttachMoney className={classes.dropdownIcons} /> Pricing Page
-            </Link>,
-            <Link to="/shopping-cart-page" className={classes.dropdownLink}>
-              <ShoppingBasket className={classes.dropdownIcons} /> Shopping Cart
-            </Link>,
-            <Link to="/ecommerce-page" className={classes.dropdownLink}>
-              <Store className={classes.dropdownIcons} /> Ecommerce Page
-            </Link>,
-            <Link to="/product-page" className={classes.dropdownLink}>
-              <ShoppingCart className={classes.dropdownIcons} /> Product Page
-            </Link>,
             <Link to="/profile-page" className={classes.dropdownLink}>
               <AccountCircle className={classes.dropdownIcons} /> Profile Page
-            </Link>,
-            <Link to="/signup-page" className={classes.dropdownLink}>
-              <PersonAdd className={classes.dropdownIcons} /> Signup Page
             </Link>,
             <Link to="/error-page" className={classes.dropdownLink}>
               <Error className={classes.dropdownIcons} /> Error Page

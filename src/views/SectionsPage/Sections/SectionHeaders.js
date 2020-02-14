@@ -281,68 +281,6 @@ export default function SectionHeaders({ ...rest }) {
                   studio.
                 </h4>
               </GridItem>
-              <GridItem
-                xs={12}
-                sm={10}
-                md={10}
-                className={classNames(classes.mlAuto, classes.mrAuto)}
-              >
-                <Card raised className={classes.card}>
-                  <CardBody formHorizontal>
-                    <form>
-                      <GridContainer>
-                        <GridItem xs={12} sm={3} md={3}>
-                          <CustomInput
-                            id="name"
-                            inputProps={{
-                              placeholder: "Company name"
-                            }}
-                            formControlProps={{
-                              fullWidth: true,
-                              className: classes.formControl
-                            }}
-                          />
-                        </GridItem>
-                        <GridItem xs={12} sm={3} md={3}>
-                          <CustomInput
-                            id="email"
-                            inputProps={{
-                              placeholder: "Company email"
-                            }}
-                            formControlProps={{
-                              fullWidth: true,
-                              className: classes.formControl
-                            }}
-                          />
-                        </GridItem>
-                        <GridItem xs={12} sm={3} md={3}>
-                          <CustomInput
-                            id="password"
-                            inputProps={{
-                              placeholder: "Company password",
-                              type: "password",
-                              autoComplete: "off"
-                            }}
-                            formControlProps={{
-                              fullWidth: true,
-                              className: classes.formControl
-                            }}
-                          />
-                        </GridItem>
-                        <GridItem xs={12} sm={3} md={3}>
-                          <Button
-                            block
-                            color="primary"
-                            className={classes.button}
-                          >
-                            Sign up
-                          </Button>
-                        </GridItem>
-                      </GridContainer>
-                    </form>
-                  </CardBody>
-                </Card>
-              </GridItem>
             </GridContainer>
           </div>
         </div>

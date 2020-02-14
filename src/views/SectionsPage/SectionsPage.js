@@ -93,13 +93,9 @@ export default function SectionsPage() {
       />
       <div className={classes.main}>
         <SectionHeaders id="headers" />
-        <SectionFeatures id="features" />
         <SectionBlogs id="blogs" />
         <SectionTeams id="teams" />
         <SectionProjects id="projects" />
-        <SectionPricing id="pricing" />
-        <SectionTestimonials id="testimonials" />
-        <SectionContacts id="contacts" />
       </div>
       <nav id="cd-vertical-nav">
         <ul>
@@ -206,48 +202,6 @@ export default function SectionsPage() {
             >
               <span className="cd-dot" />
               <span className="cd-label">Projects</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#pricing"
-              data-number="6"
-              className=""
-              onClick={e => {
-                var isMobile = navigator.userAgent.match(
-                  /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                );
-                if (isMobile) {
-                  // if we are on mobile device the scroll into view will be managed by the browser
-                } else {
-                  e.preventDefault();
-                  smoothScroll("pricing");
-                }
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Pricing</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#testimonials"
-              data-number="7"
-              className=""
-              onClick={e => {
-                var isMobile = navigator.userAgent.match(
-                  /(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i
-                );
-                if (isMobile) {
-                  // if we are on mobile device the scroll into view will be managed by the browser
-                } else {
-                  e.preventDefault();
-                  smoothScroll("testimonials");
-                }
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Testimonials</span>
             </a>
           </li>
           <li>

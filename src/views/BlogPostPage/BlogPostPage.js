@@ -20,7 +20,6 @@ import Button from "components/CustomButtons/Button.js";
 import SectionText from "./Sections/SectionText.js";
 import SectionBlogInfo from "./Sections/SectionBlogInfo.js";
 import SectionComments from "./Sections/SectionComments.js";
-import SectionSimilarStories from "./Sections/SectionSimilarStories.js";
 
 import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 
@@ -70,7 +69,6 @@ export default function BlogPostPage() {
           <SectionComments />
         </div>
       </div>
-      <SectionSimilarStories />
       <Footer
         content={
           <div>
