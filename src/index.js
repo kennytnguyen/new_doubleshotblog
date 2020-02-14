@@ -7,14 +7,16 @@ import { Router, Route, Switch } from "react-router";
 import "assets/scss/material-kit-pro-react.scss?v=1.8.0";
 
 // pages for this product
-import AboutUsPage from "views/AboutUsPage/AboutUsPage.js";
-import BlogPostPage from "views/BlogPostPage/BlogPostPage.js";
-import BlogPostsPage from "views/BlogPostsPage/BlogPostsPage.js";
-import ComponentsPage from "views/ComponentsPage/ComponentsPage.js";
-import ProfilePage from "views/ProfilePage/ProfilePage.js";
-import SectionsPage from "views/SectionsPage/SectionsPage.js";
+import AboutUsPage from "views/Examples/AboutUsPage/AboutUsPage.js";
+import BlogPostPage from "views/Examples/BlogPostPage/BlogPostPage.js";
+import BlogPostsPage from "views/Examples/BlogPostsPage/BlogPostsPage.js";
+import ComponentsPage from "views/Examples/ComponentsPage/ComponentsPage.js";
+import ProfilePage from "views/Examples/ProfilePage/ProfilePage.js";
+import SectionsPage from "views/Examples/SectionsPage/SectionsPage.js";
+import MyExamples from "views/Examples/MyExamples/MyExamples.js";
+import ErrorPage from "views/ErrorPage/ErrorPage.js"
 
-import MyExamples from "views/MyExamples/MyExamples.js";
+// my pages
 import HomePage from "views/HomePage/HomePage.js";
 
 var hist = createBrowserHistory();
@@ -28,8 +30,10 @@ ReactDOM.render(
       <Route path="/components" component={ComponentsPage} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/sections" component={SectionsPage} />
-      <Route path="/" component={HomePage} />
       <Route path="/MyExamples" component={MyExamples} />
+      <Route path="/error" component={ErrorPage} />
+
+      <Route path="/" component={HomePage} />
     </Switch>
   </Router>,
   document.getElementById("root")

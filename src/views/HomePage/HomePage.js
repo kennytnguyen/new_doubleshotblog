@@ -18,15 +18,14 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 
 // my sections
 import SectionHeader from "./Sections/SectionHeader.js";
+import SectionInterests from "./Sections/SectionInterests.js";
 
 // sections for this page
-import SectionBasics from "./Sections/SectionBasics.js";
 import SectionTabs from "./Sections/SectionTabs.js";
 import SectionPills from "./Sections/SectionPills.js";
 import SectionFooter from "./Sections/SectionFooter.js";
-import SectionTypography from "./Sections/SectionTypography.js";
 import SectionCards from "./Sections/SectionCards.js";
-import SectionJavascript from "./Sections/SectionJavascript.js";
+
 import SectionCarousel from "./Sections/SectionCarousel.js";
 
 import componentsStyle from "assets/jss/material-kit-pro-react/views/componentsStyle.js";
@@ -103,131 +102,48 @@ export default function Components() {
   return (
     <div>
       <SectionHeader />
-
+    
       <div
         className={classNames(classes.main, classes.mainRaised)}
         id="main-panel"
       >
-        <SectionBasics />
-        <SectionTabs />
-        <SectionPills />
-        <SectionTypography />
+        <br></br>
         <SectionCards />
-        <SectionJavascript />
-        <SectionCarousel />
+        <SectionInterests />
+        {/* <SectionTabs />
+        <SectionPills />
+        <SectionCarousel /> */}
+        <br></br>
+        <br></br>
       </div>
       <nav id="cd-vertical-nav">
         <ul>
           <li>
             <a
-              href="#buttons"
+              href="#blogs"
               data-number="1"
               className=""
               onClick={e => {
                 e.preventDefault();
-                smoothScroll("buttons");
+                smoothScroll("blogs");
               }}
             >
               <span className="cd-dot" />
-              <span className="cd-label">Basic Elements</span>
+              <span className="cd-label">Blogs</span>
             </a>
           </li>
           <li>
             <a
-              href="#navigation"
+              href="#interests"
               data-number="2"
               className=""
               onClick={e => {
                 e.preventDefault();
-                smoothScroll("navigation");
+                smoothScroll("interests");
               }}
             >
               <span className="cd-dot" />
-              <span className="cd-label">Navigation</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#footers"
-              data-number="3"
-              className=""
-              onClick={e => {
-                e.preventDefault();
-                smoothScroll("footers");
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Footers</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#typography"
-              data-number="4"
-              className=""
-              onClick={e => {
-                e.preventDefault();
-                smoothScroll("typography");
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Typography</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contentAreas"
-              data-number="5"
-              className=""
-              onClick={e => {
-                e.preventDefault();
-                smoothScroll("contentAreas");
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Content Areas</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#cards"
-              data-number="6"
-              className=""
-              onClick={e => {
-                e.preventDefault();
-                smoothScroll("cards");
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Cards</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#morphingCards"
-              data-number="7"
-              className=""
-              onClick={e => {
-                e.preventDefault();
-                smoothScroll("morphingCards");
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Morphing Cards</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#pablo"
-              data-number="8"
-              className=""
-              onClick={e => {
-                e.preventDefault();
-                smoothScroll("javascriptComponents");
-              }}
-            >
-              <span className="cd-dot" />
-              <span className="cd-label">Javascript</span>
+              <span className="cd-label">Interests</span>
             </a>
           </li>
         </ul>
