@@ -11,13 +11,15 @@ import AboutUsPage from "views/Examples/AboutUsPage/AboutUsPage.js";
 import BlogPostPage from "views/Examples/BlogPostPage/BlogPostPage.js";
 import BlogPostsPage from "views/Examples/BlogPostsPage/BlogPostsPage.js";
 import ComponentsPage from "views/Examples/ComponentsPage/ComponentsPage.js";
-import ProfilePage from "views/Examples/ProfilePage/ProfilePage.js";
+// import ProfilePage from "views/Examples/ProfilePage/ProfilePage.js";
 import SectionsPage from "views/Examples/SectionsPage/SectionsPage.js";
-import MyExamples from "views/Examples/MyExamples/MyExamples.js";
 import ErrorPage from "views/ErrorPage/ErrorPage.js"
 
 // my pages
-import HomePage from "views/HomePage/HomePage.js";
+import Home from "views/Home/Home.js";
+import Blogs from "views/Blogs/Blogs.js";
+import AboutMe from "views/AboutMe/AboutMe.js";
+import Interests from "views/Interests/Interests.js";
 
 var hist = createBrowserHistory();
 
@@ -28,12 +30,15 @@ ReactDOM.render(
       <Route path="/blog-post" component={BlogPostPage} />
       <Route path="/blog-posts" component={BlogPostsPage} />
       <Route path="/components" component={ComponentsPage} />
-      <Route path="/profile-page" component={ProfilePage} />
+      {/* <Route path="/profile-page" component={ProfilePage} /> */}
       <Route path="/sections" component={SectionsPage} />
-      <Route path="/MyExamples" component={MyExamples} />
       <Route path="/error" component={ErrorPage} />
 
-      <Route path="/" component={HomePage} />
+      {/* Mine */}
+      <Route path="/interests" component={Interests} />
+      <Route path="/blogs" component={Blogs} />
+      <Route path="/about-me" component={AboutMe} />
+      <Route path="/" component={Home} />
     </Switch>
   </Router>,
   document.getElementById("root")
