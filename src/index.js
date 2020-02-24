@@ -21,6 +21,9 @@ import Blogs from "views/Blogs/Blogs.js";
 import AboutMe from "views/AboutMe/AboutMe.js";
 import Interests from "views/Interests/Interests.js";
 
+// my blogs
+import blog_1 from "views/BlogPosts/1_SuddenRealization/1_Blog.js";
+
 var hist = createBrowserHistory();
 
 ReactDOM.render(
@@ -35,6 +38,8 @@ ReactDOM.render(
       <Route path="/error" component={ErrorPage} />
 
       {/* Mine */}
+      <Route path="/sudden_realization" component={blog_1} />
+      
       <Route path="/interests" component={Interests} />
       <Route path="/blogs" component={Blogs} />
       <Route path="/about-me" component={AboutMe} />

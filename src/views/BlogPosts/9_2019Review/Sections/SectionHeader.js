@@ -9,6 +9,8 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
+import Parallax from "components/Parallax/Parallax.js";
+import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 // core components
 import Header from "components/Header/Header.js";
 import Button from "components/CustomButtons/Button.js";
@@ -118,48 +120,27 @@ export default function SectionHeaders({ ...rest }) {
               </div>
             }
           />
-          <div
-            className={classes.pageHeader}
-            style={{ backgroundImage: `url("${bg12}")` }}
-          >
+          <Parallax image={require("assets/img/bg5.jpg")} filter="dark">
             <div className={classes.container}>
-              <GridContainer>
-                <GridItem xs={12} sm={6} md={6}>
-                  <h1 className={classes.title}>doubleshotblog</h1>
-                  <h4>
-                    Hi I'm Kenny and this is where I share my thoughts,
-                    experiences, and insight on anything and everything in my life.
-                    <br></br>
-                    Double shot of.. espresso?.. vodka?.. wait what
+              <GridContainer justify="center">
+                <GridItem md={8} className={classes.textCenter}>
+                  <h1 className={classes.title}>
+                    How We Built the Most Successful Castle Ever
+                  </h1>
+                  <h4 className={classes.subtitle}>
+                    The last 48 hours of my life were total madness. This is what I
+                    did.
                   </h4>
                   <br />
-                  {/* <Button
-                    color="default"
-                    size="lg"
-                    href=""
-                    target="_blank"
-                    rel=""
-                  >
-                    Blog
-                  </Button> */}
+                  <Button color="rose" size="lg" round>
+                    <FormatAlignLeft /> Read Article
+                  </Button>
                 </GridItem>
-                {/* <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
-                  <div className={classes.iframeContainer}>
-                    <iframe
-                      height="250"
-                      src="https://open.spotify.com/embed/playlist/0IflNcQnmivx1v0TDCqS9m"
-                      frameBorder="0"
-                      allow="encrypted-media"
-                      allowFullScreen=""
-                      title="Tunessa"
-                    />
-                  </div>
-                </GridItem> */}
               </GridContainer>
             </div>
-          </div>
-        </div>
+          </Parallax>
         {/* HEADER 1 END */}
+        </div>
     </div>
   );
 }
