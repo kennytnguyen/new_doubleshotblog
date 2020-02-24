@@ -12,9 +12,8 @@ import Card from "components/Card/Card.js";
 
 import carouselStyle from "assets/jss/material-kit-pro-react/views/componentsSections/carouselStyle.js";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
+import image1 from "assets/img/img/2_dad.JPG";
+import image2 from "assets/img/img/2_flippedcar.JPG";
 
 const useStyles = makeStyles(carouselStyle);
 
@@ -36,33 +35,22 @@ export default function SectionCarousel() {
             <Card>
               <Carousel {...settings}>
                 <div>
-                  <img src={image1} alt="First slide" className="slick-image" />
+                  <img src={image1} alt="Dad" className="slick-image" />
                   <div className="slick-caption">
                     <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
+                      Dad. Sadly didn't get a picture together.
                     </h4>
                   </div>
                 </div>
                 <div>
                   <img
                     src={image2}
-                    alt="Second slide"
+                    alt="Flipped Car"
                     className="slick-image"
                   />
                   <div className="slick-caption">
                     <h4>
-                      <LocationOn className="slick-icons" />
-                      Somewhere Beyond, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img src={image3} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
+                      Ay lmao
                     </h4>
                   </div>
                 </div>

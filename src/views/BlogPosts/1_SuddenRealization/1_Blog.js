@@ -20,6 +20,7 @@ import Button from "components/CustomButtons/Button.js";
 import SectionText from "./Sections/SectionText.js";
 import SectionHeader from "./Sections/SectionHeader.js";
 import SectionFooter from "./Sections/SectionFooter.js";
+import SectionCarousel from "./Sections/SectionCarousel.js";
 
 import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 
@@ -37,6 +38,7 @@ export default function BlogPostPage() {
       <div className={classes.main}>
         <div className={classes.container}>
           <SectionText />
+          <SectionCarousel />
         </div>
       </div>
       <br></br>
