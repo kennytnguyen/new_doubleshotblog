@@ -19,8 +19,6 @@ import GridItem from "components/Grid/GridItem.js";
 
 import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js";
 
-import bg12 from "assets/img/transfer/beach2.jpg";
-
 const useStyles = makeStyles(headersStyle);
 
 export default function SectionHeaders({ ...rest }) {
@@ -120,21 +118,20 @@ export default function SectionHeaders({ ...rest }) {
               </div>
             }
           />
-          <Parallax image={require("assets/img/bg5.jpg")} filter="dark">
+          <Parallax image={require("assets/img/img/4_springfest_stock.jpg")} filter="dark">
             <div className={classes.container}>
               <GridContainer justify="center">
                 <GridItem md={8} className={classes.textCenter}>
                   <h1 className={classes.title}>
-                    How We Built the Most Successful Castle Ever
+                    USC Concerts Committee
                   </h1>
+                  <h4 className={classes.title}>
+                    The Effect on First Time Concert Goers
+                  </h4>
                   <h4 className={classes.subtitle}>
-                    The last 48 hours of my life were total madness. This is what I
-                    did.
+                    November 30, 2016
                   </h4>
                   <br />
-                  <Button color="rose" size="lg" round>
-                    <FormatAlignLeft /> Read Article
-                  </Button>
                 </GridItem>
               </GridContainer>
             </div>
@@ -142,5 +139,5 @@ export default function SectionHeaders({ ...rest }) {
         {/* HEADER 1 END */}
         </div>
     </div>
-  );
+  )
 }

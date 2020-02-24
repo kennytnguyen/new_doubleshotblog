@@ -9,10 +9,6 @@ import GridItem from "components/Grid/GridItem.js";
 import Quote from "components/Typography/Quote.js";
 // core components
 
-import blog4 from "assets/img/examples/blog4.jpg";
-import blog3 from "assets/img/examples/blog3.jpg";
-import blog1 from "assets/img/examples/blog1.jpg";
-
 import sectionTextStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionTextStyle.js";
 
 const useStyles = makeStyles(sectionTextStyle);

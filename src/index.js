@@ -23,6 +23,7 @@ import Interests from "views/Interests/Interests.js";
 
 // my blogs
 import blog_1 from "views/BlogPosts/1_SuddenRealization/1_Blog.js";
+import blog_3 from "views/BlogPosts/3_ConcertsCommittee/3_Blog.js";
 
 var hist = createBrowserHistory();
 
@@ -39,6 +40,7 @@ ReactDOM.render(
 
       {/* Mine */}
       <Route path="/sudden_realization" component={blog_1} />
+      <Route path="/concerts" component={blog_3} />
       
       <Route path="/interests" component={Interests} />
       <Route path="/blogs" component={Blogs} />
