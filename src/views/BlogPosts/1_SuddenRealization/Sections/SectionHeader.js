@@ -21,6 +21,7 @@ import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSectio
 
 import bg12 from "assets/img/transfer/beach2.jpg";
 
+
 const useStyles = makeStyles(headersStyle);
 
 export default function SectionHeaders({ ...rest }) {
@@ -120,21 +121,20 @@ export default function SectionHeaders({ ...rest }) {
               </div>
             }
           />
-          <Parallax image={require("assets/img/bg5.jpg")} filter="dark">
+          <Parallax image={require("assets/img/img/2_me.JPG")} filter="dark">
             <div className={classes.container}>
               <GridContainer justify="center">
                 <GridItem md={8} className={classes.textCenter}>
                   <h1 className={classes.title}>
-                    How We Built the Most Successful Castle Ever
+                    First Concept of Financial Awareness
                   </h1>
                   <h4 className={classes.subtitle}>
-                    The last 48 hours of my life were total madness. This is what I
-                    did.
+                    September 21, 2016
                   </h4>
                   <br />
-                  <Button color="rose" size="lg" round>
+                  {/* <Button color="rose" size="lg" round>
                     <FormatAlignLeft /> Read Article
-                  </Button>
+                  </Button> */}
                 </GridItem>
               </GridContainer>
             </div>

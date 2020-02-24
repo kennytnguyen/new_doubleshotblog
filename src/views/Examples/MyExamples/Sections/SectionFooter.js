@@ -38,7 +38,7 @@ export default function SectionFooter() {
             <div>
               <div className={classes.left}>
                 <a
-                  href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkpr-footer-components"
+                  href="/"
                   target="_blank"
                   className={classes.footerBrand}
                 >
