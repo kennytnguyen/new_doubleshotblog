@@ -8,11 +8,10 @@ import Tooltip from "@material-ui/core/Tooltip";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import People from "@material-ui/icons/People";
-import Add from "@material-ui/icons/Add";
-import Favorite from "@material-ui/icons/Favorite";
+import Hobby from "@material-ui/icons/LocalActivity";
+import Work from "@material-ui/icons/Work";
+import Music from "@material-ui/icons/MusicNote";
+
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -47,6 +46,21 @@ import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePag
 import SectionHeader from "./Sections/SectionHeader.js";
 import SectionFooter from "./Sections/SectionFooter.js";
 
+//Pics
+import profilepicture from "assets/img/img/AboutMe_profilepicture.jpg";
+import facebooklogo from "assets/img/img/AboutMe_facebooklogo.png";
+import tplinklogo from "assets/img/img/AboutMe_tplink.png";
+import efilogo from "assets/img/img/AboutMe_efi.png";
+import hpelogo from "assets/img/img/AboutMe_hpe.png";
+
+//Music
+import chill from "assets/img/img/music_chill.jpg";
+import driving from "assets/img/img/music_driving.jpg";
+import fuckshit from "assets/img/img/music_fuckshit.jpg";
+import tunessa from "assets/img/img/music_tunessa.jpg";
+import pregame from "assets/img/img/music_pregame.jpg";
+import beachbitch from "assets/img/img/music_beachbitch.jpg";
+
 
 const useStyles = makeStyles(profilePageStyle);
 
@@ -72,7 +86,7 @@ export default function ProfilePage({ ...rest }) {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div>
-                  <img src={christian} alt="..." className={imageClasses} />
+                  <img src={profilepicture} alt="..." className={imageClasses} />
                 </div>
                 <div className={classes.name}>
                   <h3 className={classes.title}>Kenny Nguyen</h3>
@@ -88,7 +102,7 @@ export default function ProfilePage({ ...rest }) {
                   {/* <Button
                     justIcon
                     simple
-                    color="facebook"
+                    color="700"
                     className={classes.margin5}
                   >
                     <i className={classes.socials + " fab fa-spotify"} />
@@ -98,6 +112,7 @@ export default function ProfilePage({ ...rest }) {
                     simple
                     color="linkedin"
                     className={classes.margin5}
+                    href="http://www.linkedin.com/in/kennytnguyen"
                   >
                     <i className={classes.socials + " fab fa-linkedin"} />
                   </Button>
@@ -131,11 +146,11 @@ export default function ProfilePage({ ...rest }) {
           <div className={classes.profileTabs}>
             <NavPills
               alignCenter
-              color="primary"
+              color="info"
               tabs={[
                 {
                   tabButton: "Professional",
-                  tabIcon: Palette,
+                  tabIcon: Work,
                   tabContent: (
                     <GridContainer>
                       <GridItem
@@ -144,25 +159,25 @@ export default function ProfilePage({ ...rest }) {
                         md={7}
                         className={classes.gridItem}
                       >
-                        <h4 className={classes.title}>Latest Collections</h4>
+                        <h4 className={classes.title}>Work Experience</h4>
                         <GridContainer className={classes.collections}>
                           <GridItem xs={12} sm={12} md={6}>
                             <Card
                               background
                               style={{
-                                backgroundImage: "url(" + mariyaGeorgieva + ")"
+                                backgroundImage: "url(" + facebooklogo + ")"
                               }}
                             >
                               <CardBody background className={classes.cardBody}>
                                 <Badge
-                                  color="warning"
+                                  color="gray"
                                   className={classes.badge}
                                 >
-                                  Spring 2016
+                                  Present
                                 </Badge>
-                                <a href="#pablo">
+                                <a href="#">
                                   <h2 className={classes.cardTitleWhite}>
-                                    Stilleto
+                                    Technical Program Manager
                                   </h2>
                                 </a>
                               </CardBody>
@@ -172,16 +187,16 @@ export default function ProfilePage({ ...rest }) {
                             <Card
                               background
                               style={{
-                                backgroundImage: "url(" + clemOnojeghuo + ")"
+                                backgroundImage: "url(" + tplinklogo + ")"
                               }}
                             >
                               <CardBody background className={classes.cardBody}>
-                                <Badge color="info" className={classes.badge}>
-                                  Spring 2016
+                                <Badge color="gray" className={classes.badge}>
+                                  Summer 2017
                                 </Badge>
-                                <a href="#pablo">
+                                <a href="#">
                                   <h2 className={classes.cardTitleWhite}>
-                                    High Heels
+                                    Product Manager
                                   </h2>
                                 </a>
                               </CardBody>
@@ -191,16 +206,16 @@ export default function ProfilePage({ ...rest }) {
                             <Card
                               background
                               style={{
-                                backgroundImage: "url(" + oluEletu + ")"
+                                backgroundImage: "url(" + efilogo + ")"
                               }}
                             >
                               <CardBody background className={classes.cardBody}>
-                                <Badge color="danger" className={classes.badge}>
+                                <Badge color="gray" className={classes.badge}>
                                   Summer 2016
                                 </Badge>
-                                <a href="#pablo">
+                                <a href="#">
                                   <h2 className={classes.cardTitleWhite}>
-                                    Flats
+                                    Software Engineer
                                   </h2>
                                 </a>
                               </CardBody>
@@ -210,19 +225,19 @@ export default function ProfilePage({ ...rest }) {
                             <Card
                               background
                               style={{
-                                backgroundImage: "url(" + darrenColeshill + ")"
+                                backgroundImage: "url(" + hpelogo + ")"
                               }}
                             >
                               <CardBody background className={classes.cardBody}>
                                 <Badge
-                                  color="success"
+                                  color="gray"
                                   className={classes.badge}
                                 >
-                                  Winter 2016
+                                  Summer 2015
                                 </Badge>
                                 <a href="#pablo">
                                   <h2 className={classes.cardTitleWhite}>
-                                    Men{"'"}s Sneakers
+                                    Program Manager
                                   </h2>
                                 </a>
                               </CardBody>
@@ -268,27 +283,27 @@ export default function ProfilePage({ ...rest }) {
                 },
                 {
                   tabButton: "Music",
-                  tabIcon: People,
+                  tabIcon: Music,
                   tabContent: (
                     <div>
                       <GridContainer justify="center">
                         <GridItem
                           xs={12}
                           sm={12}
-                          md={5}
+                          md={10}
                           className={classes.gridItem}
                         >
                           <Card profile plain className={classes.card}>
                             <GridContainer>
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
-                                  <a href="#pablo">
-                                    <img src={avatar} alt="..." />
+                                  <a href="https://open.spotify.com/playlist/3UUB6N9Mg02mK2lTpuZJ39?si=4M5etP_OSmmgMMRU35QB5w">
+                                    <img src={chill} alt="..." />
                                   </a>
                                   <div
                                     className={classes.coloredShadow}
                                     style={{
-                                      backgroundImage: "url(" + avatar + ")",
+                                      backgroundImage: "url(" + chill + ")",
                                       opacity: "1"
                                     }}
                                   />
@@ -297,15 +312,13 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
                                   <h4 className={classes.cardTitle}>
-                                    Gigi Hadid
+                                    Chill
                                   </h4>
                                   <Muted>
-                                    <h6>MODEL</h6>
+                                    <h6>~2000 Songs</h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                    Don{"'"}t be scared of the truth because we
-                                    need to restart the human foundation in
-                                    truth...
+                                    Sitting on your car, overlooking city lights, and talking to someone you like.
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -315,20 +328,20 @@ export default function ProfilePage({ ...rest }) {
                         <GridItem
                           xs={12}
                           sm={12}
-                          md={5}
+                          md={10}
                           className={classes.gridItem}
                         >
                           <Card profile plain className={classes.card}>
                             <GridContainer>
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
-                                  <a href="#pablo">
-                                    <img src={marc} alt="..." />
+                                  <a href="https://open.spotify.com/playlist/6mD67g9RuKJHcleDmljIlj?si=Mj04EpWmRU6oo6oaP_C8_w">
+                                    <img src={driving} alt="..." />
                                   </a>
                                   <div
                                     className={classes.coloredShadow}
                                     style={{
-                                      backgroundImage: "url(" + marc + ")",
+                                      backgroundImage: "url(" + driving + ")",
                                       opacity: "1"
                                     }}
                                   />
@@ -337,15 +350,13 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
                                   <h4 className={classes.cardTitle}>
-                                    Marc Jacobs
+                                    Driving
                                   </h4>
                                   <Muted>
-                                    <h6>DESIGNER</h6>
+                                    <h6>~1700 Songs</h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                    Don{"'"}t be scared of the truth because we
-                                    need to restart the human foundation in
-                                    truth...
+                                    Probably singing, grooving, and pre-gaming in the car with your friends before a concert.
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -357,20 +368,20 @@ export default function ProfilePage({ ...rest }) {
                         <GridItem
                           xs={12}
                           sm={12}
-                          md={5}
+                          md={10}
                           className={classes.gridItem}
                         >
                           <Card profile plain className={classes.card}>
                             <GridContainer>
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
-                                  <a href="#pablo">
-                                    <img src={kendall} alt="..." />
+                                  <a href="https://open.spotify.com/playlist/1Nb04rl5D97hXks1CzJw7o?si=giko5C-9Qjehu38wM3XveQ">
+                                    <img src={fuckshit} alt="..." />
                                   </a>
                                   <div
                                     className={classes.coloredShadow}
                                     style={{
-                                      backgroundImage: "url(" + kendall + ")",
+                                      backgroundImage: "url(" + fuckshit + ")",
                                       opacity: "1"
                                     }}
                                   />
@@ -379,14 +390,13 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
                                   <h4 className={classes.cardTitle}>
-                                    Kendall Jenner
+                                    Fuckshit
                                   </h4>
                                   <Muted>
-                                    <h6>MODEL</h6>
+                                    <h6>~400 Songs</h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                    I love you like Kanye loves Kanye. Don
-                                    {"'"}t be scared of the truth.
+                                    Bruh. It's hip-hop.
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -396,21 +406,21 @@ export default function ProfilePage({ ...rest }) {
                         <GridItem
                           xs={12}
                           sm={12}
-                          md={5}
+                          md={10}
                           className={classes.gridItem}
                         >
                           <Card profile plain className={classes.card}>
                             <GridContainer>
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
-                                  <a href="#pablo">
-                                    <img src={cardProfile2Square} alt="..." />
+                                  <a href="https://open.spotify.com/playlist/0IflNcQnmivx1v0TDCqS9m?si=n976RnPMQkqRL6OhcND91Q">
+                                    <img src={tunessa} alt="..." />
                                   </a>
                                   <div
                                     className={classes.coloredShadow}
                                     style={{
                                       backgroundImage:
-                                        "url(" + cardProfile2Square + ")",
+                                        "url(" + tunessa + ")",
                                       opacity: "1"
                                     }}
                                   />
@@ -419,13 +429,13 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
                                   <h4 className={classes.cardTitle}>
-                                    George West
+                                    tunessa
                                   </h4>
                                   <Muted>
-                                    <h6>MODEL/DJ</h6>
+                                    <h6>~300 Songs</h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                    I love you like Kanye loves Kanye.
+                                    Night time sad boi drives.
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -435,43 +445,43 @@ export default function ProfilePage({ ...rest }) {
                       </GridContainer>
                     </div>
                   )
-                },
-                {
-                  tabButton: "Hobbies",
-                  tabIcon: Camera,
-                  tabContent: (
-                    <GridContainer justify="center">
-                      <GridItem xs={12} sm={12} md={3}>
-                        <img
-                          alt="..."
-                          src={mariyaGeorgieva}
-                          className={navImageClasses}
-                        />
-                        <img
-                          alt="..."
-                          src={clemOnojegaw}
-                          className={navImageClasses}
-                        />
-                      </GridItem>
-                      <GridItem xs={12} sm={12} md={3}>
-                        <img
-                          alt="..."
-                          src={clemOnojeghuo}
-                          className={navImageClasses}
-                        />
-                        <img
-                          alt="..."
-                          src={oluEletu}
-                          className={navImageClasses}
-                        />
-                        <img
-                          alt="..."
-                          src={cynthiaDelRio}
-                          className={navImageClasses}
-                        />
-                      </GridItem>
-                    </GridContainer>
-                  )
+                // },
+                // {
+                //   tabButton: "Hobbies",
+                //   tabIcon: Hobby,
+                //   tabContent: (
+                //     <GridContainer justify="center">
+                //       <GridItem xs={12} sm={12} md={3}>
+                //         <img
+                //           alt="..."
+                //           src={mariyaGeorgieva}
+                //           className={navImageClasses}
+                //         />
+                //         <img
+                //           alt="..."
+                //           src={clemOnojegaw}
+                //           className={navImageClasses}
+                //         />
+                //       </GridItem>
+                //       <GridItem xs={12} sm={12} md={3}>
+                //         <img
+                //           alt="..."
+                //           src={clemOnojeghuo}
+                //           className={navImageClasses}
+                //         />
+                //         <img
+                //           alt="..."
+                //           src={oluEletu}
+                //           className={navImageClasses}
+                //         />
+                //         <img
+                //           alt="..."
+                //           src={cynthiaDelRio}
+                //           className={navImageClasses}
+                //         />
+                //       </GridItem>
+                //     </GridContainer>
+                //   )
                 }
               ]}
             />

@@ -47,7 +47,7 @@ export default function Components() {
         <br></br>
         <br></br>
       </div>
-      
+      <br></br>
       <SectionFooter />
     </div>
   );

@@ -58,7 +58,6 @@ export default function SectionHeaders({ ...rest }) {
                     <Button
                       href="/"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       Home

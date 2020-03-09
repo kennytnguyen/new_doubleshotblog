@@ -23,7 +23,14 @@ import Interests from "views/Interests/Interests.js";
 
 // my blogs
 import blog_1 from "views/BlogPosts/1_SuddenRealization/1_Blog.js";
+import blog_2 from "views/BlogPosts/2_FootballTech/2_Blog.js";
 import blog_3 from "views/BlogPosts/3_ConcertsCommittee/3_Blog.js";
+import blog_4 from "views/BlogPosts/4_FindingHappiness/1_Blog.js";
+import blog_5 from "views/BlogPosts/5_FiniteTime/1_Blog.js";
+import blog_6 from "views/BlogPosts/6_KernyStory/1_Blog.js";
+import blog_7 from "views/BlogPosts/7_MyMusic/1_Blog.js";
+import blog_8 from "views/BlogPosts/8_AskMeAnything/1_Blog.js";
+import blog_9 from "views/BlogPosts/9_2019Review/9_Blog.js";
 
 var hist = createBrowserHistory();
 
@@ -39,12 +46,20 @@ ReactDOM.render(
       <Route path="/error" component={ErrorPage} />
 
       {/* Mine */}
-      <Route path="/sudden_realization" component={blog_1} />
-      <Route path="/concerts" component={blog_3} />
+      <Route path="/entry_1_realization" component={blog_1} />
+      <Route path="/entry_3_football_tech" component={blog_2} />
+      <Route path="/entry_4_concerts" component={blog_3} />
+      <Route path="/entry_5_happiness" component={blog_4} />
+      <Route path="/entry_6_finite" component={blog_5} />
+      <Route path="/kernyStory_internship" component={blog_6} />
+      <Route path="/entry_7_music_v1" component={blog_7} />
+      <Route path="/ama" component={blog_8} />
+      <Route path="/2019Review" component={blog_9} />
       
       <Route path="/interests" component={Interests} />
       <Route path="/blogs" component={Blogs} />
-      <Route path="/about-me" component={AboutMe} />
+      <Route path="/about" component={AboutMe} />
+      <Route path="/index" component={Home} />
       <Route path="/" component={Home} />
     </Switch>
   </Router>,

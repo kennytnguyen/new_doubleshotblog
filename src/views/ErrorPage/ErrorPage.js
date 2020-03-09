@@ -55,6 +55,7 @@ export default function ErrorPage({ ...rest }) {
               <h4 className={classes.description}>
                 Just like this guy
               </h4>
+              <h6>You're probably seeing this page because I'm either still backfilling content or I fucked up somewhere.</h6>
             </GridItem>
           </GridContainer>
         </div>

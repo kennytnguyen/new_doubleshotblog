@@ -104,7 +104,7 @@ export default function SectionCards() {
                       <h6 className={classes.cardCategoryWhite}>
                         LIFE REFLECTION
                       </h6>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <a href="/2019Review">
                         <h3 className={classes.cardTitleWhite}>
                           2019 Year-in-Review
                         </h3>
@@ -114,8 +114,12 @@ export default function SectionCards() {
                         of emotional growth, degenerate activites, and 
                         relationship building.
                       </p>
-                      <Button simple color="white">
-                        <Subject /> Read More
+                      <Button 
+                        href="/2019Review"
+                        simple color="white"
+                      >
+                        <Subject /> 
+                        Read More
                       </Button>
                     </CardBody>
                   </Card>
@@ -127,7 +131,7 @@ export default function SectionCards() {
                   >
                     <CardBody background>
                       <h6 className={classes.cardCategoryWhite}>ADVICE</h6>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <a href="/ama">
                         <h3 className={classes.cardTitleWhite}>
                           Ask Me Anything
                         </h3>
@@ -135,8 +139,12 @@ export default function SectionCards() {
                       <p className={classes.cardDescriptionWhite}>
                         Life after graduation.
                       </p>
-                      <Button round color="white">
-                        <Subject /> Read More
+                      <Button
+                        href="/ama" 
+                        round color="white"
+                      >
+                        <Subject /> 
+                        Read More
                       </Button>
                     </CardBody>
                   </Card>

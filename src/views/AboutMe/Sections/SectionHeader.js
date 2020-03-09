@@ -17,7 +17,7 @@ import GridItem from "components/Grid/GridItem.js";
 
 import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js";
 
-import bg12 from "assets/img/transfer/beach2.jpg";
+import bg12 from "assets/img/img/japan_1.JPG";
 
 const useStyles = makeStyles(headersStyle);
 
@@ -56,7 +56,6 @@ export default function SectionHeaders({ ...rest }) {
                     <Button
                       href="/"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       Home
@@ -74,7 +73,7 @@ export default function SectionHeaders({ ...rest }) {
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href="/error"
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
                       color="transparent"

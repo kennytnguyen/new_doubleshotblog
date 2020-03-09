@@ -56,7 +56,6 @@ export default function SectionHeaders({ ...rest }) {
                     <Button
                       href="/"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       Home
@@ -66,7 +65,6 @@ export default function SectionHeaders({ ...rest }) {
                     <Button
                       href="/blogs"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       Blog
@@ -84,9 +82,8 @@ export default function SectionHeaders({ ...rest }) {
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href="/about"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       About Me
@@ -125,12 +122,9 @@ export default function SectionHeaders({ ...rest }) {
             <div className={classes.container}>
               <GridContainer>
                 <GridItem xs={12} sm={6} md={6}>
-                  <h1 className={classes.title}>doubleshotblog</h1>
+                  <h1 className={classes.title}>Blogs</h1>
                   <h4>
-                    Hi I'm Kenny and this is where I share my thoughts,
-                    experiences, and insight on anything and everything in my life.
-                    <br></br>
-                    Double shot of.. espresso?.. vodka?.. wait what
+                    A collection of things I've written about.
                   </h4>
                   <br />
                   {/* <Button

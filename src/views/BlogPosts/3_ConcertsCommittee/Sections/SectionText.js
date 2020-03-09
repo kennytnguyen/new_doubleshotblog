@@ -80,7 +80,11 @@ export default function SectionText() {
               But they're not, you just have the wrong people introducing it to you. 
               Just like anything new you try or retry, you'll always have to base it off the first experience you've had with it.
           </p>
+          <br></br>
 
+          <h3 className={classes.title}>
+            Free Shit, Fun Shit, Music
+          </h3>
 
           <Quote
             textClassName={classes.quoteText}

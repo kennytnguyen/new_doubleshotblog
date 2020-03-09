@@ -36,10 +36,9 @@ export default function SectionFooter() {
           theme="dark"
           content={
             <div>
-              <div className={classes.left}>
+             <div className={classes.left}>
                 <a
                   href="/"
-                  target="_blank"
                   className={classes.footerBrand}
                 >
                   doubleshotblog
@@ -49,8 +48,7 @@ export default function SectionFooter() {
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href=""
-                      target="_blank"
+                      href="/blogs"
                       className={classes.block}
                     >
                       Blog
@@ -58,8 +56,7 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href=""
-                      target="_blank"
+                      href="/error"
                       className={classes.block}
                     >
                       Interests
@@ -67,8 +64,7 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href=""
-                      onClick={e => e.preventDefault()}
+                      href="/about"
                       className={classes.block}
                     >
                       About Me
@@ -80,7 +76,7 @@ export default function SectionFooter() {
                 <ul>
                   <li>
                     <Button
-                      href=""
+                      href="https://www.youtube.com/channel/UCGotzaRFDfzRrGGkpxigShw"
                       target="_blank"
                       color="white"
                       justIcon
@@ -91,7 +87,7 @@ export default function SectionFooter() {
                   </li>
                   <li>
                     <Button
-                      href=""
+                      href="https://www.instagram.com/kernylistens"
                       target="_blank"
                       color="white"
                       justIcon
