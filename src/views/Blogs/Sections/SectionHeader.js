@@ -72,9 +72,8 @@ export default function SectionHeaders({ ...rest }) {
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href="/error"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       Interests

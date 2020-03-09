@@ -109,7 +109,7 @@ export default function Components() {
       >
         <br></br>
         <SectionCards />
-        <SectionInterests />
+        {/* <SectionInterests /> */}
         {/* <SectionTabs />
         <SectionPills />
         <SectionCarousel /> */}

@@ -124,7 +124,7 @@ export default function SectionCards() {
                     </CardBody>
                   </Card>
                 </GridItem>
-                <GridItem xs={12} sm={6} md={6}>
+                {/* <GridItem xs={12} sm={6} md={6}>
                   <Card
                     background
                     style={{ backgroundImage: `url(${picture_ama})` }}
@@ -148,7 +148,7 @@ export default function SectionCards() {
                       </Button>
                     </CardBody>
                   </Card>
-                </GridItem>
+                </GridItem> */}
               </GridContainer>
             </div>
           </div>

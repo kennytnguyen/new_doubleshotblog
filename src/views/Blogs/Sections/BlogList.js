@@ -95,7 +95,7 @@ export default function SectionBlogs({ ...rest }) {
                   </GridItem>
                 </GridContainer>
               </Card>
-              <Card plain blog className={classes.card}>
+              {/* <Card plain blog className={classes.card}>
                 <GridContainer>
                   <GridItem xs={12} sm={4} md={4}>
                     <CardHeader image plain>
@@ -133,7 +133,7 @@ export default function SectionBlogs({ ...rest }) {
                         {" "}
                         Read More{" "}
                       </a> */}
-                    </p>
+                    {/* </p>
                     <p className={classes.author}>
                       by{" "}
                         <b>Kenny Nguyen</b>
@@ -142,7 +142,7 @@ export default function SectionBlogs({ ...rest }) {
                     </p>
                   </GridItem>
                 </GridContainer>
-              </Card>
+              </Card> */}
               {/* <Card plain blog className={classes.card}>
                 <GridContainer>
                   <GridItem xs={12} sm={4} md={4}>
