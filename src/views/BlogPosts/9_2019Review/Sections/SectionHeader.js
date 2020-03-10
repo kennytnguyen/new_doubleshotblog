@@ -48,7 +48,7 @@ export default function SectionHeaders({ ...rest }) {
             fixed
             changeColorOnScroll={{
                 height: 300,
-                color: "default"
+                color: "white"
               }}
             links={
               <div className={classes.collapse}>

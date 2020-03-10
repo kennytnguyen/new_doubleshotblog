@@ -1,4 +1,6 @@
-/*eslint-disable*/ import React from "react";
+/*eslint-disable*/ 
+import React from "react";
+
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
@@ -20,7 +22,6 @@ import Button from "components/CustomButtons/Button.js";
 import SectionText from "./Sections/SectionText.js";
 import SectionHeader from "./Sections/SectionHeader.js";
 import SectionFooter from "./Sections/SectionFooter.js";
-
 import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 
 const useStyles = makeStyles(blogPostPageStyle);

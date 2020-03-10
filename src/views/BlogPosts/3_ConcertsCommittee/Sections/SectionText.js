@@ -13,11 +13,11 @@ import blog4 from "assets/img/examples/blog4.jpg";
 import blog3 from "assets/img/examples/blog3.jpg";
 import blog1 from "assets/img/examples/blog1.jpg";
 
-import lineup_1 from "assets/img/img/4_uci.jpg";
-import lineup_2 from "assets/img/img/4_ucr.jpg";
-import lineup_3 from "assets/img/img/4_ucsb.jpg";
-import lineup_4 from "assets/img/img/4_springfest_2015lineup.jpg";
-import lineup_5 from "assets/img/img/4_csuf.jpg";
+// import lineup_1 from "assets/img/img/4_uci.jpg";
+// import lineup_2 from "assets/img/img/4_ucr.jpg";
+// import lineup_3 from "assets/img/img/4_ucsb.jpg";
+// import lineup_4 from "assets/img/img/4_springfest_2015lineup.jpg";
+// import lineup_5 from "assets/img/img/4_csuf.jpg";
 
 
 import sectionTextStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionTextStyle.js";

@@ -1,16 +1,16 @@
 import React from "react";
 // nodejs library that concatenates classes
-import classNames from "classnames";
+// import classNames from "classnames";
 // react component for creating beautiful carousel
-import Carousel from "react-slick";
+// import Carousel from "react-slick";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+// import Favorite from "@material-ui/icons/Favorite";
 import Parallax from "components/Parallax/Parallax.js";
-import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
+// import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 // core components
 import Header from "components/Header/Header.js";
 import Button from "components/CustomButtons/Button.js";
@@ -19,7 +19,7 @@ import GridItem from "components/Grid/GridItem.js";
 
 import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js";
 
-import bg12 from "assets/img/transfer/beach2.jpg";
+// import bg12 from "assets/img/transfer/beach2.jpg";
 
 
 const useStyles = makeStyles(headersStyle);

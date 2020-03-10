@@ -7,13 +7,13 @@ import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 // sections of this Page
 import SectionHeaders from "./Sections/SectionHeaders.js";
-import SectionFeatures from "./Sections/SectionFeatures.js";
+// import SectionFeatures from "./Sections/SectionFeatures.js";
 import SectionBlogs from "./Sections/SectionBlogs.js";
 import SectionTeams from "./Sections/SectionTeams.js";
 import SectionProjects from "./Sections/SectionProjects.js";
-import SectionPricing from "./Sections/SectionPricing.js";
-import SectionTestimonials from "./Sections/SectionTestimonials.js";
-import SectionContacts from "./Sections/SectionContacts.js";
+// import SectionPricing from "./Sections/SectionPricing.js";
+// import SectionTestimonials from "./Sections/SectionTestimonials.js";
+// import SectionContacts from "./Sections/SectionContacts.js";
 
 import sectionsPageStyle from "assets/jss/material-kit-pro-react/views/sectionsPageStyle.js";
 

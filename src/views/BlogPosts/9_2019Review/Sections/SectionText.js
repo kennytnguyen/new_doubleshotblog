@@ -9,16 +9,14 @@ import GridItem from "components/Grid/GridItem.js";
 import Quote from "components/Typography/Quote.js";
 // core components
 
-import blog4 from "assets/img/examples/blog4.jpg";
-import blog3 from "assets/img/examples/blog3.jpg";
-import blog1 from "assets/img/examples/blog1.jpg";
+
 
 //Pictures
 import scale from "assets/img/img/9_scale.jpg";
-import SectionCarousel from "./SectionCarousel.js";
+// import SectionCarousel from "./SectionCarousel.js";
 
 import sectionTextStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionTextStyle.js";
-import { Grid } from "@material-ui/core";
+// import { Grid } from "@material-ui/core";
 
 const useStyles = makeStyles(sectionTextStyle);
 
@@ -77,31 +75,32 @@ export default function SectionText() {
           <p>
             First things first, let’s just get the degenerate activities out of the way. 
             I kicked off 2018 to 2019 at OMFG NYE! In San Diego but for the remainder of the year in 2019, I:
-
-            <ul>
-              <li>
-                Went to <b>105</b> unique functions or events
+          </p>
+          <ul>
+            <li>
+              Went to <b>105</b> unique functions or events
+                <ul>
                   <li>
                     Averaged <b>2.2 events per weekend</b>.
                   </li>
                   <li>
                     Averaged <b>26.4 shots per weekend</b>.
                   </li>
-              </li>
-              <li>
-                Spent <b>28 days/nights</b> <i>(24.1%)</i> not at home or out of town (weekdays and weekends included).
-              </li>
-              <li>
-                Spent <b>47 weekends</b> <i>(90%)</i> going out.
-              </li>
-              <li>
-                Met <b>over ~400+ people</b> over the course of the year.
-              </li>
-              <li>
-                Saw about <b>161+ different live performances</b> at festivals, individual concerts, or events.
-              </li>
-            </ul>
-          </p>
+                </ul>
+            </li>
+            <li>
+              Spent <b>28 days/nights</b> <i>(24.1%)</i> not at home or out of town (weekdays and weekends included).
+            </li>
+            <li>
+              Spent <b>47 weekends</b> <i>(90%)</i> going out.
+            </li>
+            <li>
+              Met <b>over ~400+ people</b> over the course of the year.
+            </li>
+            <li>
+              Saw about <b>161+ different live performances</b> at festivals, individual concerts, or events.
+            </li>
+          </ul>
           <br />
 
           <h3 className={classes.title}>
@@ -152,13 +151,15 @@ export default function SectionText() {
             not because there are expectations or implications but rather because there is little need to feel obligated or consider 
             someone else within the indirect impact of your actions. There is no one to get upset at you for:
             <br /><br />
-            <ul>
-              <li>Staying out late</li>
-              <li>Exploring new activities</li>
-              <li>Bonding with people, both new and old</li>
-              <li>Drinking and having too fun without their presence</li>
-              <li>Meeting new interesting people</li>
-            </ul>
+          </p>
+          <ul>
+            <li>Staying out late</li>
+            <li>Exploring new activities</li>
+            <li>Bonding with people, both new and old</li>
+            <li>Drinking and having too fun without their presence</li>
+            <li>Meeting new interesting people</li>
+          </ul>
+          <p>
             <br /><br />
             Touching upon the latter part of my answer, I found that the best way to meet people is through alcohol consumption 
             (if you couldn’t already tell) because it’s a social lubricant and helps put you in positions where you can really get to 
@@ -268,16 +269,18 @@ export default function SectionText() {
             where they are so dependent that they attempt to leech off one another even though there’s nothing positive to leech off of. 
             That’s the vicious cycle of a toxic relationship, it’s essentially just people who don’t know how to be alone attempting to fill 
             a void in their life with someone else, dragging that person down with them.
-            <br /><br />
-            <div className={classes.typo}>
-              <div className={classes.note}></div>
-              <Quote
-                text="I believe that 80% of relationships in the world are horseshit. 
-                      A bunch of people who never took time to learn how to be alone, 
-                      therefore never learned how to love themselves, so you employed someone else to do it."
-                author=" Daniel Sloss, Comedian"
-              />
-            </div>
+            <br />
+          </p>
+          <div className={classes.typo}>
+            <div className={classes.note}></div>
+            <Quote
+              text="I believe that 80% of relationships in the world are horseshit. 
+                    A bunch of people who never took time to learn how to be alone, 
+                    therefore never learned how to love themselves, so you employed someone else to do it."
+              author=" Daniel Sloss, Comedian"
+            />
+          </div>
+          <p>
             I’ve learned to focus on myself and leave my problems up for just me to solve. 
             Granted, it’s healthy to know that you’re never alone but this is part of me having learned how to be selfish.
             This comes from privilege however, I’m lucky to have a handful of friends that respect my space and will always be there for me.
@@ -327,6 +330,7 @@ export default function SectionText() {
             The qualities people really focus on are the ones most Asian parents think are valuable and happen to be both naturally objective and tangible. 
             Objective qualities, characteristics, or “defining” background information can be:
             <br />
+          </p>
             <ul>
               <li>
                 <i>Height</i>: If people are being surface level and objective then why not put weight too?
@@ -359,17 +363,22 @@ export default function SectionText() {
                 <i>Pictures</i>: Got to add something that requires pure objectivity right?
               </li>
             </ul>
+            <p>
             Before you know it, you have 100x carbon copies of the same Asian person but in different bodies and places across the world.
             
             After scrolling through endless auctions because Facebook’s awesome algos love to blow these posts up in my face, 
             I began to feel a lot of reassurance in who I was as a person. This feeling transpired over the course of time because I began to ask myself:
-            <br /><br />
+            <br />
+          </p>
+          <div className={classes.typo}>
             <Quote
                 text="What do I think are my refining qualities?"
             />
             <Quote
                 text="What do I personally value in life, people, or myself?"
             />
+          </div>
+          <p>
             It’s an interesting perspective because I believe that for a lot of people, they tend to focus on what others think, value, and care about 
             relative to themselves which leads to people pleasing. Parents may think engineering, medical, or business are the most preferred lines of 
             work and because they place so much value on it, they incept the idea that so will others (future potential significant others). 
@@ -384,7 +393,8 @@ export default function SectionText() {
             <br /><br />
             With that being said, I’d like to refer to an excerpt from Daniel Sloss’ Jigsaw stand-up special regarding relationships and self-love.
             <br /><br />
-            <div className={classes.typo}>
+          </p>
+          <div className={classes.typo}>
               <Quote
                 text="You have to learn to love yourself before you can allow someone else to do it as well. 
                       That’s it. There’s nothing wrong with being single. There’s nothing wrong with being alone. 
@@ -397,13 +407,11 @@ export default function SectionText() {
                       That’s something every one of us deserves, and that doesn’t mean you’re not happy."
                 author=" Daniel Sloss, Comedian"
               />
-            </div>
-          </p>
+          </div>
 
           <h3 className={classes.title}>
             What's in Part 2
           </h3>
-          <p>
             <ul>
               <li>
                 Value of Friendships
@@ -427,7 +435,6 @@ export default function SectionText() {
                 Mindset Shifts
               </li>
             </ul>
-          </p>
           <br />
         </GridItem>
       </GridContainer>

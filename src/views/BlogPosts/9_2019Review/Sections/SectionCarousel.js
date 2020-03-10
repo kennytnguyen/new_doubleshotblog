@@ -12,10 +12,6 @@ import Card from "components/Card/Card.js";
 
 import carouselStyle from "assets/jss/material-kit-pro-react/views/componentsSections/carouselStyle.js";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
-
 import goodfriends1 from "assets/img/img/9_goodfriends.jpg";
 import goodfriends2 from "assets/img/img/9_goodfriends_2.JPG";
 import goodfriends3 from "assets/img/img/9_goodfriends_3.JPG";
