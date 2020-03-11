@@ -19,8 +19,6 @@ import GridItem from "components/Grid/GridItem.js";
 
 import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js";
 
-import bg12 from "assets/img/transfer/beach2.jpg";
-
 const useStyles = makeStyles(headersStyle);
 
 export default function SectionHeaders({ ...rest }) {
@@ -75,7 +73,7 @@ export default function SectionHeaders({ ...rest }) {
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href="/error"
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
                       color="transparent"
@@ -85,7 +83,7 @@ export default function SectionHeaders({ ...rest }) {
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href="/about"
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
                       color="transparent"
@@ -119,21 +117,17 @@ export default function SectionHeaders({ ...rest }) {
               </div>
             }
           />
-          <Parallax image={require("assets/img/bg5.jpg")} filter="dark">
+          <Parallax image={require("assets/img/ama_albums.jpg")} filter="dark">
             <div className={classes.container}>
               <GridContainer justify="center">
                 <GridItem md={8} className={classes.textCenter}>
                   <h1 className={classes.title}>
-                    How We Built the Most Successful Castle Ever
+                    Ask Me Anything
                   </h1>
                   <h4 className={classes.subtitle}>
-                    The last 48 hours of my life were total madness. This is what I
-                    did.
+                    Life After College
                   </h4>
                   <br />
-                  <Button color="rose" size="lg" round>
-                    <FormatAlignLeft /> Read Article
-                  </Button>
                 </GridItem>
               </GridContainer>
             </div>

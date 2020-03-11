@@ -65,7 +65,6 @@ export default function SectionHeaders({ ...rest }) {
                     <Button
                       href="/blogs"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       Blog
@@ -75,7 +74,6 @@ export default function SectionHeaders({ ...rest }) {
                     <Button
                       href="/error"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       Interests
@@ -83,9 +81,8 @@ export default function SectionHeaders({ ...rest }) {
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href="/about"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       About Me
@@ -125,12 +122,9 @@ export default function SectionHeaders({ ...rest }) {
               <GridContainer>
                 <GridItem xs={12} sm={6} md={6}>
                   <h1 className={classes.title}>About Me</h1>
-                  {/* <h4>
-                    Hi I'm Kenny and this is where I share my thoughts,
-                    experiences, and insight on anything and everything in my life.
-                    <br></br>
-                    Double shot of.. espresso?.. vodka?.. wait what
-                  </h4> */}
+                  <h4>
+                    Nothing interesting here. Carry on now.
+                  </h4>
                   <br />
                   {/* <Button
                     color="default"

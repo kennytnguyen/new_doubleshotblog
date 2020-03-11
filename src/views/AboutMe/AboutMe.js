@@ -28,23 +28,15 @@ import Parallax from "components/Parallax/Parallax.js";
 import Clearfix from "components/Clearfix/Clearfix.js";
 import Button from "components/CustomButtons/Button.js";
 
-import christian from "assets/img/faces/christian.jpg";
-import oluEletu from "assets/img/examples/olu-eletu.jpg";
-import clemOnojeghuo from "assets/img/examples/clem-onojeghuo.jpg";
-import cynthiaDelRio from "assets/img/examples/cynthia-del-rio.jpg";
-import mariyaGeorgieva from "assets/img/examples/mariya-georgieva.jpg";
-import clemOnojegaw from "assets/img/examples/clem-onojegaw.jpg";
-import darrenColeshill from "assets/img/examples/darren-coleshill.jpg";
-import avatar from "assets/img/faces/avatar.jpg";
-import marc from "assets/img/faces/marc.jpg";
-import kendall from "assets/img/faces/kendall.jpg";
-import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
-
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.js";
+import InstagramEmbed from 'react-instagram-embed';
 
 //My Shit
 import SectionHeader from "./Sections/SectionHeader.js";
 import SectionFooter from "./Sections/SectionFooter.js";
+import SectionProfessional from "./Sections/SectionProfessional.js";
+import SectionEducational from "./Sections/SectionEducational.js";
+import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 
 //Pics
 import profilepicture from "assets/img/img/AboutMe_profilepicture.jpg";
@@ -63,6 +55,8 @@ import beachbitch from "assets/img/img/music_beachbitch.jpg";
 
 
 const useStyles = makeStyles(profilePageStyle);
+
+const green = '#191414';
 
 export default function ProfilePage({ ...rest }) {
   React.useEffect(() => {
@@ -99,15 +93,16 @@ export default function ProfilePage({ ...rest }) {
                   >
                     <i className={classes.socials + " fab fa-youtube"} />
                   </Button>
-                  {/* <Button
+                  <Button
                     justIcon
                     simple
-                    color="700"
+                    color='success'
                     className={classes.margin5}
+                    href="https://open.spotify.com/user/axcelaration?si=A7WZdjC7Tx2Lki5hUS5VfA"
                   >
                     <i className={classes.socials + " fab fa-spotify"} />
-                  </Button> */}
-                  <Button
+                  </Button>
+                  {/* <Button
                     justIcon
                     simple
                     color="linkedin"
@@ -115,6 +110,15 @@ export default function ProfilePage({ ...rest }) {
                     href="http://www.linkedin.com/in/kennytnguyen"
                   >
                     <i className={classes.socials + " fab fa-linkedin"} />
+                  </Button> */}
+                  <Button
+                    justIcon
+                    simple
+                    color="instagram"
+                    className={classes.margin5}
+                    href="http://www.instagram.com/kernylistens"
+                  >
+                    <i className={classes.socials + " fab fa-instagram"} />
                   </Button>
                 </div>
               </div>
@@ -152,132 +156,18 @@ export default function ProfilePage({ ...rest }) {
                   tabButton: "Professional",
                   tabIcon: Work,
                   tabContent: (
+                    
                     <GridContainer>
                       <GridItem
                         xs={12}
                         sm={12}
                         md={7}
+                        lg={7}
                         className={classes.gridItem}
                       >
-                        <h4 className={classes.title}>Work Experience</h4>
-                        <GridContainer className={classes.collections}>
-                          <GridItem xs={12} sm={12} md={6}>
-                            <Card
-                              background
-                              style={{
-                                backgroundImage: "url(" + facebooklogo + ")"
-                              }}
-                            >
-                              <CardBody background className={classes.cardBody}>
-                                <Badge
-                                  color="gray"
-                                  className={classes.badge}
-                                >
-                                  Present
-                                </Badge>
-                                <a href="#">
-                                  <h2 className={classes.cardTitleWhite}>
-                                    Technical Program Manager
-                                  </h2>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
-                            <Card
-                              background
-                              style={{
-                                backgroundImage: "url(" + tplinklogo + ")"
-                              }}
-                            >
-                              <CardBody background className={classes.cardBody}>
-                                <Badge color="gray" className={classes.badge}>
-                                  Summer 2017
-                                </Badge>
-                                <a href="#">
-                                  <h2 className={classes.cardTitleWhite}>
-                                    Product Manager
-                                  </h2>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
-                            <Card
-                              background
-                              style={{
-                                backgroundImage: "url(" + efilogo + ")"
-                              }}
-                            >
-                              <CardBody background className={classes.cardBody}>
-                                <Badge color="gray" className={classes.badge}>
-                                  Summer 2016
-                                </Badge>
-                                <a href="#">
-                                  <h2 className={classes.cardTitleWhite}>
-                                    Software Engineer
-                                  </h2>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
-                            <Card
-                              background
-                              style={{
-                                backgroundImage: "url(" + hpelogo + ")"
-                              }}
-                            >
-                              <CardBody background className={classes.cardBody}>
-                                <Badge
-                                  color="gray"
-                                  className={classes.badge}
-                                >
-                                  Summer 2015
-                                </Badge>
-                                <a href="#pablo">
-                                  <h2 className={classes.cardTitleWhite}>
-                                    Program Manager
-                                  </h2>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                        </GridContainer>
+                        <SectionProfessional />
+                        <SectionEducational />
                       </GridItem>
-                      {/* <GridItem
-                        xs={12}
-                        sm={12}
-                        md={2}
-                        className={classes.gridItem}
-                      >
-                        <h4 className={classes.title}>Stats</h4>
-                        <ul className={classes.listUnstyled}>
-                          <li>
-                            <b>60</b> Products
-                          </li>
-                          <li>
-                            <b>4</b> Collections
-                          </li>
-                          <li>
-                            <b>331</b> Influencers
-                          </li>
-                          <li>
-                            <b>1.2K</b> Likes
-                          </li>
-                        </ul>
-                        <hr />
-                        <h4 className={classes.title}>About this work</h4>
-                        <p className={classes.description}>
-                          French luxury footwear and fashion. The footwear has
-                          incorporated shiny, red-lacquered soles that have
-                          become his signature.
-                        </p>
-                        <hr />
-                        <h4 className={classes.title}>Focus</h4>
-                        <Badge color="primary">Footwear</Badge>
-                        <Badge color="rose">Luxury</Badge>
-                      </GridItem> */}
                     </GridContainer>
                   )
                 },
@@ -445,6 +335,15 @@ export default function ProfilePage({ ...rest }) {
                       </GridContainer>
                     </div>
                   )
+                  },
+                  {
+                    tabButton: "Ask",
+                    tabIcon: QuestionAnswerIcon,
+                    tabContent: (
+                      <GridContainer justify="center">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7eWxDyrGqEcpTVbh2OoUaE914GZbdBRL1tpjOMqTbeCshxg/viewform?embedded=true" width="600" height="420" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                      </GridContainer>
+                    )
                 // },
                 // {
                 //   tabButton: "Hobbies",

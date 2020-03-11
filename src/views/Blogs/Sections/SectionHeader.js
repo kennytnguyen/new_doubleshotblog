@@ -17,7 +17,9 @@ import GridItem from "components/Grid/GridItem.js";
 
 import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js";
 
-import bg12 from "assets/img/transfer/beach2.jpg";
+import bg12 from "assets/img/img/green.jpg";
+
+import beach from "assets/img/img/AboutMe_beach.jpg";
 
 const useStyles = makeStyles(headersStyle);
 
@@ -116,12 +118,12 @@ export default function SectionHeaders({ ...rest }) {
           />
           <div
             className={classes.pageHeader}
-            style={{ backgroundImage: `url("${bg12}")` }}
+            style={{ backgroundImage: `url("${beach}")` }}
           >
             <div className={classes.container}>
               <GridContainer>
                 <GridItem xs={12} sm={6} md={6}>
-                  <h1 className={classes.title}>Blogs</h1>
+                  <h1 className={classes.title}>Blog(s)</h1>
                   <h4>
                     A collection of things I've written about.
                   </h4>

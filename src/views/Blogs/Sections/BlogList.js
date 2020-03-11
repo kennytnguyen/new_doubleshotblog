@@ -23,7 +23,7 @@ import bg5 from "assets/img/bg5.jpg";
 
 
 import fbparty_yir from "assets/img/img/yir_fbparty.jpg";
-import picture_ama from "assets/img/img/ama_albums.JPG";
+import picture_ama from "assets/img/ama_albums.jpg";
 
 const useStyles = makeStyles(blogsStyle);
 
@@ -95,7 +95,7 @@ export default function SectionBlogs({ ...rest }) {
                   </GridItem>
                 </GridContainer>
               </Card>
-              {/* <Card plain blog className={classes.card}>
+              <Card plain blog className={classes.card}>
                 <GridContainer>
                   <GridItem xs={12} sm={4} md={4}>
                     <CardHeader image plain>
@@ -129,11 +129,7 @@ export default function SectionBlogs({ ...rest }) {
                     </h3>
                     <p className={classes.description}>
                       Life after graduation.
-                      {/* <a href="/ama">
-                        {" "}
-                        Read More{" "}
-                      </a> */}
-                    {/* </p>
+                    </p>
                     <p className={classes.author}>
                       by{" "}
                         <b>Kenny Nguyen</b>
@@ -142,7 +138,7 @@ export default function SectionBlogs({ ...rest }) {
                     </p>
                   </GridItem>
                 </GridContainer>
-              </Card> */}
+              </Card>
               {/* <Card plain blog className={classes.card}>
                 <GridContainer>
                   <GridItem xs={12} sm={4} md={4}>

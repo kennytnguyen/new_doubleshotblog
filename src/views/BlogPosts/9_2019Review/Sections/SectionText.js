@@ -89,7 +89,7 @@ export default function SectionText() {
                 </ul>
             </li>
             <li>
-              Spent <b>28 days/nights</b> <i>(24.1%)</i> not at home or out of town (weekdays and weekends included).
+              Spent <b>88 days/nights</b> <i>(24.1%)</i> not at home or out of town (weekdays and weekends included).
             </li>
             <li>
               Spent <b>47 weekends</b> <i>(90%)</i> going out.

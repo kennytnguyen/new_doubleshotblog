@@ -66,7 +66,6 @@ export default function SectionHeaders({ ...rest }) {
                     <Button
                       href="/blogs"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       Blog
@@ -76,7 +75,6 @@ export default function SectionHeaders({ ...rest }) {
                     <Button
                       href="/error"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       Interests
@@ -86,7 +84,6 @@ export default function SectionHeaders({ ...rest }) {
                     <Button
                       href="/about"
                       className={classes.navLink}
-                      onClick={e => e.preventDefault()}
                       color="transparent"
                     >
                       About Me

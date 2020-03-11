@@ -31,7 +31,7 @@ import blog_4 from "views/BlogPosts/4_FindingHappiness/1_Blog.js";
 import blog_5 from "views/BlogPosts/5_FiniteTime/1_Blog.js";
 import blog_6 from "views/BlogPosts/6_KernyStory/1_Blog.js";
 import blog_7 from "views/BlogPosts/7_MyMusic/1_Blog.js";
-import blog_8 from "views/BlogPosts/8_AskMeAnything/1_Blog.js";
+import blog_8 from "views/BlogPosts/8_AskMeAnything/8_Blog.js";
 import blog_9 from "views/BlogPosts/9_2019Review/9_Blog.js";
 
 const history = createBrowserHistory();
@@ -101,15 +101,13 @@ ReactDOM.render(
       <Route path="/entry_5_happiness" component={blog_4} />
       <Route path="/entry_6_finite" component={blog_5} />
       <Route path="/kernyStory_internship" component={blog_6} />
-      <Route path="/entry_7_music_v1" component={blog_7} />
-      <Route path="/ama" component={blog_8} /> */}
+      <Route path="/entry_7_music_v1" component={blog_7} /> */}
+      <Route path="/ama" component={blog_8} />
       <Route path="/2019Review" component={blog_9} />
       
       <Route path="/interests" component={Interests} />
       <Route path="/blogs" component={Blogs} />
       <Route path="/about" component={AboutMe} />
-      <Route path="/index" component={Home} />
-
       <Route path="/" component={Home} />
     </Switch>
   </Router>,

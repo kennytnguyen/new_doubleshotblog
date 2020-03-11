@@ -12,9 +12,8 @@ import Card from "components/Card/Card.js";
 
 import carouselStyle from "assets/jss/material-kit-pro-react/views/componentsSections/carouselStyle.js";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
+import image1 from "assets/img/img/ama_past.jpg";
+import image2 from "assets/img/img/ama_present.jpg";
 
 const useStyles = makeStyles(carouselStyle);
 
@@ -40,7 +39,7 @@ export default function SectionCarousel() {
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
+                      Dictate the future with past mistakes.
                     </h4>
                   </div>
                 </div>
@@ -53,16 +52,7 @@ export default function SectionCarousel() {
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
-                      Somewhere Beyond, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img src={image3} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
+                      Reflect today and mitgate mistakes.
                     </h4>
                   </div>
                 </div>
