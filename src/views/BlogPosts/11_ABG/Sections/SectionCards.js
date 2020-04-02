@@ -40,7 +40,6 @@ import cardBlog5 from "assets/img/examples/card-blog5.jpg";
 import avatar from "assets/img/faces/avatar.jpg";
 import picture_ama from "assets/img/ama_albums.jpg";
 import fbparty_yir from "assets/img/yir_fbparty.jpg";
-import picture_abg from "assets/img/img/11_abg.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -96,31 +95,6 @@ export default function SectionCards() {
                 <h2>Latest Blogs</h2>
               </div>
               <GridContainer>
-              <GridItem xs={12} sm={6} md={6}>
-                  <Card
-                    background
-                    style={{ backgroundImage: `url(${picture_abg})` }}
-                  >
-                    <CardBody background>
-                      <h6 className={classes.cardCategoryWhite}>Random Thoughts</h6>
-                      <a href="/abg">
-                        <h3 className={classes.cardTitleWhite}>
-                          Asian Baby Girl
-                        </h3>
-                      </a>
-                      <p className={classes.cardDescriptionWhite}>
-                        Historal Context and Negative Connotations
-                      </p>
-                      <Button
-                        href="/abg" 
-                        round color="white"
-                      >
-                        <Subject /> 
-                        Read More
-                      </Button>
-                    </CardBody>
-                  </Card>
-                </GridItem>
                 <GridItem xs={12} sm={6} md={6}>
                   <Card
                     background
@@ -130,7 +104,7 @@ export default function SectionCards() {
                       <h6 className={classes.cardCategoryWhite}>
                         LIFE REFLECTION
                       </h6>
-                      <a href="/2019Review">
+                      <a href="#pablo" onClick={e => e.preventDefault()}>
                         <h3 className={classes.cardTitleWhite}>
                           2019 Year-in-Review
                         </h3>
@@ -140,12 +114,8 @@ export default function SectionCards() {
                         of emotional growth, degenerate activites, and 
                         relationship building.
                       </p>
-                      <Button 
-                        href="/2019Review"
-                        simple color="white"
-                      >
-                        <Subject /> 
-                        Read More
+                      <Button simple color="white">
+                        <Subject /> Read More
                       </Button>
                     </CardBody>
                   </Card>
@@ -157,7 +127,7 @@ export default function SectionCards() {
                   >
                     <CardBody background>
                       <h6 className={classes.cardCategoryWhite}>ADVICE</h6>
-                      <a href="/ama">
+                      <a href="#pablo" onClick={e => e.preventDefault()}>
                         <h3 className={classes.cardTitleWhite}>
                           Ask Me Anything
                         </h3>
@@ -165,12 +135,8 @@ export default function SectionCards() {
                       <p className={classes.cardDescriptionWhite}>
                         Life after graduation.
                       </p>
-                      <Button
-                        href="/ama" 
-                        round color="white"
-                      >
-                        <Subject /> 
-                        Read More
+                      <Button round color="white">
+                        <Subject /> Read More
                       </Button>
                     </CardBody>
                   </Card>
