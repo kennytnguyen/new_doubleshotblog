@@ -40,10 +40,6 @@ import cardBlog5 from "assets/img/examples/card-blog5.jpg";
 import avatar from "assets/img/faces/avatar.jpg";
 import picture_ama from "assets/img/ama_albums.jpg";
 import fbparty_yir from "assets/img/yir_fbparty.jpg";
-import picture_abg from "assets/img/img/11_abg.jpg";
-import picture_caliprop from "assets/img/img/12_caliprop.jpg";
-import ny_sunset from "assets/img/img/13_sunset.jpg";
-import picture_cooking from "assets/img/img/14_cooking.JPG";
 
 const useStyles = makeStyles(styles);
 
@@ -99,118 +95,6 @@ export default function SectionCards() {
                 <h2>Latest Blogs</h2>
               </div>
               <GridContainer>
-              <GridItem xs={12} sm={6} md={6}>
-                  <Card
-                    background
-                    style={{ backgroundImage: `url(${picture_cooking})` }}
-                  >
-                    <CardBody background>
-                      <h6 className={classes.cardCategoryWhite}>Life Reflection</h6>
-                      <a href="/cooking">
-                        <h3 className={classes.cardTitleWhite}>
-                          Cooking
-                        </h3>
-                      </a>
-                      <p className={classes.cardDescriptionWhite}>
-                        The first thing I learned in COVID
-                      </p>
-                      <p className={classes.cardDescriptionWhite}>
-                        <i>October 14, 2020</i>
-                      </p>
-                      <Button
-                        href="/cooking"
-                        simple color="white"
-                      >
-                        <Subject />
-                        Read More
-                      </Button>
-                    </CardBody>
-                  </Card>
-                </GridItem>
-              <GridItem xs={12} sm={6} md={6}>
-                  <Card
-                    background
-                    style={{ backgroundImage: `url(${ny_sunset})` }}
-                  >
-                    <CardBody background>
-                      <h6 className={classes.cardCategoryWhite}>Life Reflection</h6>
-                      <a href="/flaws">
-                        <h3 className={classes.cardTitleWhite}>
-                          A Short COVID Self-Reflection
-                        </h3>
-                      </a>
-                      <p className={classes.cardDescriptionWhite}>
-                        Some of my flaws.
-                      </p>
-                      <p className={classes.cardDescriptionWhite}>
-                        <i>October 14, 2020</i>
-                      </p>
-                      <Button
-                        href="/flaws"
-                        round color="white"
-                      >
-                        <Subject />
-                        Read More
-                      </Button>
-                    </CardBody>
-                  </Card>
-                </GridItem>
-              <GridItem xs={12} sm={6} md={6}>
-                  <Card
-                    background
-                    style={{ backgroundImage: `url(${picture_caliprop})` }}
-                  >
-                    <CardBody background>
-                      <h6 className={classes.cardCategoryWhite}>Political</h6>
-                      <a href="/abg">
-                        <h3 className={classes.cardTitleWhite}>
-                          2020 California Propositions
-                        </h3>
-                      </a>
-                      <p className={classes.cardDescriptionWhite}>
-                        What I'm voting for and why.
-                      </p>
-                      <p className={classes.cardDescriptionWhite}>
-                        <i>October 14, 2020</i>
-                      </p>
-                      <Button
-                        href="/vote"
-                        simple color="white"
-                      >
-                        <Subject />
-                        Read More
-                      </Button>
-                    </CardBody>
-                  </Card>
-                </GridItem>
-              <GridItem xs={12} sm={6} md={6}>
-                  <Card
-                    background
-                    style={{ backgroundImage: `url(${picture_abg})` }}
-                  >
-                    <CardBody background>
-                      <h6 className={classes.cardCategoryWhite}>Random Thoughts</h6>
-                      <a href="/abg">
-                        <h3 className={classes.cardTitleWhite}>
-                          Asian Baby Girl
-                        </h3>
-                      </a>
-                      <p className={classes.cardDescriptionWhite}>
-                        Historal Context and Negative Connotations
-                      </p>
-                      <p className={classes.cardDescriptionWhite}>
-                        <i>April 1, 2020</i>
-                      </p>
-                      <Button
-                        href="/abg"
-                        round color="white"
-                      >
-                        <Subject />
-                        Read More
-                      </Button>
-                    </CardBody>
-                  </Card>
-                </GridItem>
                 <GridItem xs={12} sm={6} md={6}>
                   <Card
                     background
@@ -220,24 +104,18 @@ export default function SectionCards() {
                       <h6 className={classes.cardCategoryWhite}>
                         LIFE REFLECTION
                       </h6>
-                      <a href="/2019Review">
+                      <a href="#pablo" onClick={e => e.preventDefault()}>
                         <h3 className={classes.cardTitleWhite}>
                           2019 Year-in-Review
                         </h3>
                       </a>
                       <p className={classes.cardDescriptionWhite}>
-                        Emotional growth, degenerate activites, &
-                        friendships.
+                        Long awaited year-in-review for a rollercoaster 
+                        of emotional growth, degenerate activites, and 
+                        relationship building.
                       </p>
-                      <p className={classes.cardDescriptionWhite}>
-                        <i>March 9, 2020</i>
-                      </p>
-                      <Button
-                        href="/2019Review"
-                        simple color="white"
-                      >
-                        <Subject />
-                        Read More
+                      <Button simple color="white">
+                        <Subject /> Read More
                       </Button>
                     </CardBody>
                   </Card>
@@ -249,7 +127,7 @@ export default function SectionCards() {
                   >
                     <CardBody background>
                       <h6 className={classes.cardCategoryWhite}>ADVICE</h6>
-                      <a href="/ama">
+                      <a href="#pablo" onClick={e => e.preventDefault()}>
                         <h3 className={classes.cardTitleWhite}>
                           Ask Me Anything
                         </h3>
@@ -257,15 +135,8 @@ export default function SectionCards() {
                       <p className={classes.cardDescriptionWhite}>
                         Life after graduation.
                       </p>
-                      <p className={classes.cardDescriptionWhite}>
-                        <i>May 7, 2019</i>
-                      </p>
-                      <Button
-                        href="/ama"
-                        round color="white"
-                      >
-                        <Subject />
-                        Read More
+                      <Button round color="white">
+                        <Subject /> Read More
                       </Button>
                     </CardBody>
                   </Card>

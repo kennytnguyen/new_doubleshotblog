@@ -26,6 +26,7 @@ import fbparty_yir from "assets/img/img/yir_fbparty.jpg";
 import picture_ama from "assets/img/ama_albums.jpg";
 import picture_caliprop from "assets/img/img/12_caliprop.jpg";
 import ny_sunset from "assets/img/img/13_sunset.jpg";
+import picture_cooking from "assets/img/img/14_cooking.JPG";
 
 const useStyles = makeStyles(blogsStyle);
 
@@ -45,6 +46,52 @@ export default function SectionBlogs({ ...rest }) {
             >
               <h2 className={classes.title}>Latest Posts</h2>
               <br />
+              <Card plain blog className={classes.card}>
+                <GridContainer>
+                  <GridItem xs={12} sm={4} md={4}>
+                    <CardHeader image plain>
+                      <a href="/cooking">
+                        <img src={picture_cooking} alt="..." />
+                      </a>
+                      <div
+                        className={classes.coloredShadow}
+                        style={{
+                          backgroundImage: `url(${picture_cooking})`,
+                          opacity: "1"
+                        }}
+                      />
+                      <div
+                        className={classes.coloredShadow}
+                        style={{
+                          backgroundImage: `url(${picture_cooking})`,
+                          opacity: "1"
+                        }}
+                      />
+                    </CardHeader>
+                  </GridItem>
+                  <GridItem xs={12} sm={8} md={8}>
+                      <Danger>
+                      <h6 className={classes.cardCategory}>
+                        LIFE REFLECTION
+                      </h6>
+                    </Danger>
+                    <h3 className={classes.cardTitle}>
+                      <a href="/cooking">
+                        Cooking
+                      </a>
+                    </h3>
+                    <p className={classes.description}>
+                      The fisrt thing I learned in COVID
+                    </p>
+                    <p className={classes.author}>
+                      by{" "}
+                        <b>Kenny Nguyen</b>
+                      {" "}
+                      - October 24, 2020
+                    </p>
+                  </GridItem>
+                </GridContainer>
+              </Card>
               <Card plain blog className={classes.card}>
                 <GridContainer>
                   <GridItem xs={12} sm={4} md={4}>
