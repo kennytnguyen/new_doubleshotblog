@@ -41,6 +41,7 @@ import avatar from "assets/img/faces/avatar.jpg";
 import picture_ama from "assets/img/ama_albums.jpg";
 import fbparty_yir from "assets/img/yir_fbparty.jpg";
 import picture_abg from "assets/img/img/11_abg.jpg";
+import picture_caliprop from "assets/img/img/12_caliprop.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -99,6 +100,31 @@ export default function SectionCards() {
               <GridItem xs={12} sm={6} md={6}>
                   <Card
                     background
+                    style={{ backgroundImage: `url(${picture_caliprop})` }}
+                  >
+                    <CardBody background>
+                      <h6 className={classes.cardCategoryWhite}>Political</h6>
+                      <a href="/abg">
+                        <h3 className={classes.cardTitleWhite}>
+                          2020 California Propositions
+                        </h3>
+                      </a>
+                      <p className={classes.cardDescriptionWhite}>
+                        What I'm voting for and why.
+                      </p>
+                      <Button
+                        href="/vote"
+                        simple color="white"
+                      >
+                        <Subject />
+                        Read More
+                      </Button>
+                    </CardBody>
+                  </Card>
+                </GridItem>
+              <GridItem xs={12} sm={6} md={6}>
+                  <Card
+                    background
                     style={{ backgroundImage: `url(${picture_abg})` }}
                   >
                     <CardBody background>
@@ -112,10 +138,10 @@ export default function SectionCards() {
                         Historal Context and Negative Connotations
                       </p>
                       <Button
-                        href="/abg" 
+                        href="/abg"
                         round color="white"
                       >
-                        <Subject /> 
+                        <Subject />
                         Read More
                       </Button>
                     </CardBody>
@@ -136,15 +162,15 @@ export default function SectionCards() {
                         </h3>
                       </a>
                       <p className={classes.cardDescriptionWhite}>
-                        Long awaited year-in-review for a rollercoaster 
-                        of emotional growth, degenerate activites, and 
+                        Long awaited year-in-review for a rollercoaster
+                        of emotional growth, degenerate activites, and
                         relationship building.
                       </p>
-                      <Button 
+                      <Button
                         href="/2019Review"
                         simple color="white"
                       >
-                        <Subject /> 
+                        <Subject />
                         Read More
                       </Button>
                     </CardBody>
@@ -166,10 +192,10 @@ export default function SectionCards() {
                         Life after graduation.
                       </p>
                       <Button
-                        href="/ama" 
+                        href="/ama"
                         round color="white"
                       >
-                        <Subject /> 
+                        <Subject />
                         Read More
                       </Button>
                     </CardBody>

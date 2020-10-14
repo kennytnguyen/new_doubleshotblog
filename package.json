@@ -7,9 +7,10 @@
     "@material-ui/icons": "4.2.1",
     "animate.css": "3.7.2",
     "classnames": "2.2.6",
-    "history": "^4.9.0",
+    "gulp": "github:gulpjs/gulp",
+    "history": "^4.10.1",
     "moment": "2.24.0",
-    "node-sass": "4.12.0",
+    "node-sass": "^4.14.1",
     "nouislider": "14.0.2",
     "prop-types": "15.7.2",
     "react": "16.9.0",
@@ -20,8 +21,8 @@
     "react-google-maps": "9.4.5",
     "react-image-gallery": "0.8.18",
     "react-instagram-embed": "^1.5.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
     "react-slick": "0.25.2",
     "react-swipeable-views": "0.13.3",
     "react-tagsinput": "3.19.0"
@@ -39,8 +40,8 @@
     "map-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.css --source-map true"
   },
   "devDependencies": {
-    "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.8"
+    "gulp-append-prepend": "1.0.8",
+    "gulp-cli": "^2.3.0"
   },
   "optionalDependencies": {
     "@types/googlemaps": "3.37.3",

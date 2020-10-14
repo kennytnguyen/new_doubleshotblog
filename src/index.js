@@ -35,6 +35,7 @@ import blog_8 from "views/BlogPosts/8_AskMeAnything/8_Blog.js";
 import blog_9 from "views/BlogPosts/9_2019Review/9_Blog.js";
 import blog_10 from "views/BlogPosts/10_2019Review_2/10_Blog.js";
 import blog_11 from "views/BlogPosts/11_ABG/11_Blog.js";
+import blog_12 from "views/BlogPosts/12_CaliforniaPropositions/12_Blog.js";
 
 const history = createBrowserHistory();
 const trackingId = "UA-86495824-2";
@@ -107,7 +108,8 @@ ReactDOM.render(
       <Route path="/ama" component={blog_8} />
       <Route path="/2019Review" component={blog_9} />
       <Route path="/abg" component={blog_11} />
-      
+      <Route path="/vote" component={blog_12} />
+
       <Route path="/interests" component={Interests} />
       <Route path="/blogs" component={Blogs} />
       <Route path="/about" component={AboutMe} />
@@ -116,5 +118,3 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
-
-
