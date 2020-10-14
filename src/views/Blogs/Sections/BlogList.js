@@ -24,6 +24,8 @@ import bg5 from "assets/img/img/11_abg.jpg";
 import picture_abg from "assets/img/img/11_abg.jpg";
 import fbparty_yir from "assets/img/img/yir_fbparty.jpg";
 import picture_ama from "assets/img/ama_albums.jpg";
+import picture_caliprop from "assets/img/img/12_caliprop.jpg";
+import ny_sunset from "assets/img/img/13_sunset.jpg";
 
 const useStyles = makeStyles(blogsStyle);
 
@@ -43,6 +45,96 @@ export default function SectionBlogs({ ...rest }) {
             >
               <h2 className={classes.title}>Latest Posts</h2>
               <br />
+              <Card plain blog className={classes.card}>
+                <GridContainer>
+                  <GridItem xs={12} sm={4} md={4}>
+                    <CardHeader image plain>
+                      <a href="/flaws">
+                        <img src={ny_sunset} alt="..." />
+                      </a>
+                      <div
+                        className={classes.coloredShadow}
+                        style={{
+                          backgroundImage: `url(${ny_sunset})`,
+                          opacity: "1"
+                        }}
+                      />
+                      <div
+                        className={classes.coloredShadow}
+                        style={{
+                          backgroundImage: `url(${ny_sunset})`,
+                          opacity: "1"
+                        }}
+                      />
+                    </CardHeader>
+                  </GridItem>
+                  <GridItem xs={12} sm={8} md={8}>
+                      <Danger>
+                      <h6 className={classes.cardCategory}>
+                        LIFE REFLECTION
+                      </h6>
+                    </Danger>
+                    <h3 className={classes.cardTitle}>
+                      <a href="/flaws">
+                        A Short COVID Self-Reflection
+                      </a>
+                    </h3>
+                    <p className={classes.description}>
+                      Some of my flaws.
+                    </p>
+                    <p className={classes.author}>
+                      by{" "}
+                        <b>Kenny Nguyen</b>
+                      {" "}
+                      - October 24, 2020
+                    </p>
+                  </GridItem>
+                </GridContainer>
+              </Card>
+              <Card plain blog className={classes.card}>
+                <GridContainer>
+                  <GridItem xs={12} sm={4} md={4}>
+                    <CardHeader image plain>
+                      <a href="/vote">
+                        <img src={picture_caliprop} alt="..." />
+                      </a>
+                      <div
+                        className={classes.coloredShadow}
+                        style={{
+                          backgroundImage: `url(${picture_caliprop})`,
+                          opacity: "1"
+                        }}
+                      />
+                      <div
+                        className={classes.coloredShadow}
+                        style={{
+                          backgroundImage: `url(${picture_caliprop})`,
+                          opacity: "1"
+                        }}
+                      />
+                    </CardHeader>
+                  </GridItem>
+                  <GridItem xs={12} sm={8} md={8}>
+                      <h6 className={classes.cardCategory}>
+                        POLITICAL
+                      </h6>
+                    <h3 className={classes.cardTitle}>
+                      <a href="/vote">
+                        2020 California Propositions
+                      </a>
+                    </h3>
+                    <p className={classes.description}>
+                      What I'm voting for and why.
+                    </p>
+                    <p className={classes.author}>
+                      by{" "}
+                        <b>Kenny Nguyen</b>
+                      {" "}
+                      - October 24, 2020
+                    </p>
+                  </GridItem>
+                </GridContainer>
+              </Card>
               <Card plain blog className={classes.card}>
                 <GridContainer>
                   <GridItem xs={12} sm={4} md={4}>
@@ -122,8 +214,8 @@ export default function SectionBlogs({ ...rest }) {
                       </a>
                     </h3>
                     <p className={classes.description}>
-                        Long awaited year-in-review for a rollercoaster 
-                        of emotional growth, degenerate activites, and 
+                        Long awaited year-in-review for a rollercoaster
+                        of emotional growth, degenerate activites, and
                         relationship building.
                       {/* <a href="/2019Review" onClick={e => e.preventDefault()}>
                         {" "}

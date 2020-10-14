@@ -37,7 +37,7 @@ export default function Components() {
   return (
     <div>
       <SectionHeader />
-    
+
       <div
         className={classNames(classes.main, classes.mainRaised)}
         id="main-panel"
