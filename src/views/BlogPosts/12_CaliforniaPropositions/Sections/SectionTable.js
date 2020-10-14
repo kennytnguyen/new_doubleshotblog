@@ -26,7 +26,7 @@ export default function Tables() {
           "14",
           "Yes",
           "Issue $5.5 billion in bonds for projects and to conduct research, trials, and programs related to stem cells.",
-          "We love stem cell researcg. We need more medical innovation as existing health care is expensive and only technological or operational advances/efficiencies can lower the cost of what goes into health care. Bonds are also cheap right now so it's a good time to issue bonds to fund long-term future-proofing projects",
+          "We love stem cell research. We need more medical innovation as existing health care is expensive and only technological or operational advances/efficiencies can lower the cost of what goes into health care. Bonds are also cheap right now so it's a good time to issue bonds to fund long-term future-proofing projects",
         ],
         [
           "15",
@@ -36,15 +36,15 @@ export default function Tables() {
         ],
         [
           "16",
-          "No",
+          "--",
           "Currently, Affirmative Action within California is banned (discrimination and preferential treatment) for public entities. Prop 16 if passed will repeal Prop 209 which means that California will now allow for race-based or sex-based preferences in California",
           "As much as I support the idea of Affirmative Action, which is allowing people or entities to give preferential treatment to specific races, sexes, or people. \
             I'm mostly afraid that when we give power to average or normal people to make decisions on behalf of others' lives, careers, or education, we have to rely on the \
             idea of good faith or trust in that people will carry out these policies in effective, helpful ways. I personally don't want to give people the power to be able to \
             discriminate or offer preferential treatment for specific racial groups because this allows people to also give preferential treatment to their own ethnic groups (e.g. Indian, Asian, White) \
             and can honestly make the racial inequality worse in California. Repealing Prop 209 gives more power to the ruling classes and those who hold the most wealth. Double-edged sword. \
-            Continue banning Affirmative Action and maintain status quo. The data says otherwise though, since Affirmative Action was banned, only representation for whites and asians increased at the expense of underrepresented minorities -- \
-            which personally I'm fine with but I do have more doubts and worries than trust that this legislation will be executed well."
+            Continue banning Affirmative Action and maintain status quo. The data says otherwise though that since Affirmative Action was banned, only representation for whites and asians increased at the expense of underrepresented minorities -- \
+            which personally I'm not okay with (because I want more minority representation) but I do have more doubts and worries than trust that this legislation will be executed well. Voting yes or no on this depends on your specific world view. I'm okay with it going either way to be honest"
         ],
         [
           "17",
@@ -56,7 +56,7 @@ export default function Tables() {
           "18",
           "No",
           "Allow 17 year olds to vote if they will be 18 at the time of the next general election.",
-          "See previous logic.",
+          "See previous logic. Kids don't even know what they want out of their own futures, I'm not sure it's responsible to let them vote on behalf of others'",
         ],
         [
           "19",
