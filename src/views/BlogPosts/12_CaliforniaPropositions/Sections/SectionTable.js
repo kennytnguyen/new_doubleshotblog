@@ -48,15 +48,16 @@ export default function Tables() {
         ],
         [
           "17",
-          "No",
+          "Yes",
           "Allow people with felonies while on parole to vote.",
-          "I see that this Proposition is an effort to get more 'democratic' voters to vote in favor of 'democratic' policies and politicians. It is also quite difficult to be a felon in California so my stance on this is No, because I already think 90% of the population is unfit to vote regardless of their Criminal History Background. "
+          "I see that this Proposition is an effort to get more 'democratic' voters to vote in favor of 'democratic' policies and politicians. It is also quite difficult to be a felon in California so my stance on this is No, because I already think 90% of the population is unfit to vote regardless of their Criminal History Background. However, I've \
+          been presented with the following statement: 'It's not a democrat power grab, it's about restoring rights to people who are in all other ways reintegrated into society (including paying taxes). The justice system is supposed to be reformative, not punitive.' which convinced me to switch my vote from No to Yes. Also support democracy"
         ],
         [
           "18",
           "No",
           "Allow 17 year olds to vote if they will be 18 at the time of the next general election.",
-          "See previous logic. Kids don't even know what they want out of their own futures, I'm not sure it's responsible to let them vote on behalf of others'",
+          "yea na i aint tryna have no kid vote high key",
         ],
         [
           "19",
